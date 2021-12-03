@@ -56,11 +56,22 @@
     height: 100%;
     text-align: left;
   }
+  .home-left-panel h1{
+    padding-bottom:4%;
+  }
   .home-left-panel button{
     border-radius: 90px;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 0%;
+    padding-top: 2%;
+    /* align-items: center; */
+
   }
+  .bt-text{
+   font-weight: bold;
+    padding-top: 1%;
+
+  }
+
   .home-right-panel{
     width: 50%;
 
@@ -77,8 +88,15 @@
     padding: 5%;
     text-align:left;
     align-items: center;
-
     margin: 0%;
+  }
+  #section-home-id i{
+    font-size:500%;
+    color:green;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border: solid rgb(228, 226, 228);
+    border-width: 2px;
   }
   #section-about-id{
     height: auto;
@@ -86,8 +104,32 @@
     padding: 12%;
     text-align:center;
     align-items: center;
-
     margin: 0%;
+  }
+  #section-about-id #i-1{
+    font-size:800%;
+    color:rgb(34, 126, 247);
+  }
+  #section-about-id #i-2{
+    font-size:800%;
+    color:red;
+  }
+  #section-about-id #i-3{
+    font-size:800%;
+    color:green;
+  }
+  #section-about-id-1{
+    height: auto;
+    background-color: white;
+    padding: 5%;
+    text-align:left;
+    align-items: center;
+    margin: 0%;
+  }
+  #section-about-id-1 button{
+    border-radius: 100px;
+    padding: 3%;
+    margin: 2%;
   }
   #section-features-id{
     background-color: white;
@@ -118,11 +160,19 @@
     width: 20%;
     padding: 1%;
   }
+  .section-testimonials-text{
+    padding-left: 7%;
+  }
 
-  ul.u {
+  .ul{
     list-style-type: none;
     padding: 0%;
     padding-top: 2%;
+  }
+  .ul i{
+    font-size:200%;
+    color:red;
+    padding-top: 0%;
   }
   .list-group a{
     background-color: rgb(205, 229, 236);
@@ -177,9 +227,12 @@
 
   #section-portfolio-id{
     height: auto;
-    padding: 5%;
-    margin: 0%;
   }
+  #portfolio-image-div{
+    margin: 0%;
+    padding: 0%;
+  }
+
   #section-portfolio-id img{
     height: auto;
     padding: 2%;
@@ -208,12 +261,26 @@
   }
   #team-cards img{
     border-radius: 3%;
+    width: 100%;
   }
   #input-email1{
-    padding: 2%;
-    border-radius: 100px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 40px;
   }
-
+  .team-card-details{
+    background-color: white;
+    padding: 05%;
+    padding-bottom: 10%;
+    margin-bottom: 5%;
+    border-radius: 3%;
+    width: 100%;
+  }
+  .team-red-border{
+  color: white;
+  border-bottom: solid red;
+  border-width: 5px;
+ }
   #video {
     border-radius: 8px;
     padding: 1%;
@@ -255,6 +322,10 @@
     margin: 2%;
     border: solid white;
     border-width: 1px;
+  }
+  #section-work-id i{
+    font-size:800%;
+    color:white;
   }
   .price-card-1 h1{
     font-size: 200%;
@@ -350,7 +421,10 @@
   #section-contact-id h4{
     padding-bottom: 6%;
   }
-
+#section-contact-inputs{
+  padding: 0%;
+  margin: 0%;
+}
   .section-footer{
     display: flex;
     flex-flow: row wrap;
@@ -362,9 +436,11 @@
   .footer-1{
     display: flex;
     flex-flow: row nowrap;
-    font-size: 120%;
+    font-size: 180%;
     text-align: left;
   }
+
+
   .footer-1 i{
     padding-top: 1%;
   }
@@ -374,7 +450,7 @@
   .footer-2{
     display: flex;
     flex-flow: row nowrap;
-    font-size: 170%;
+    font-size: 255%;
   }
   .footer-2 .footer-text{
     color: rgb(145, 153, 145);
@@ -411,6 +487,10 @@
 
   #border-between-stars{
     text-align: left;
+    border-left: solid rgb(156, 150, 150);
+    padding-left: 10%;
+    border-width: 5px;
+
   }
   #section-features-id i{
     font-size:600%;
@@ -447,10 +527,18 @@
   .grey-text{
     color: rgb(108, 116, 108);
   }
+  .green-text{
+    color: green;
+  }
+  #section-stars{
+    text-align: left;
+    padding-left: 5%;
+  }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     #border-between-stars{
       border-left: none;
+      padding-left: 03%;
     }
 
   }
@@ -459,13 +547,36 @@
       display: none;
     }
     #top-bar-menu-id{
-      display: block;    }
-      .home-left-panel{padding: 0%;}
+      display: block;
+    }
+      .home-left-panel{
+        padding: 0%;
+      }
+      .home-left-panel button{
+        padding: 0%;
+        padding-top: 2%;
+      }
+      .footer-1{
+        font-size: 150%;
+      }
+      .footer-2{
+        font-size: 200%;
+      }
   }
+  @media screen and (max-width: 1000px) {
+    .footer-1{
+      font-size: 120%;
+    }
+    .footer-2{
+      font-size: 145%;
+    }
+
+}
   @media screen and (max-width: 1269px) {
     #section-work-list-id h5{
       padding-top: 0%; margin-left: 28%;
     }
+
   }
   @media screen and (max-width: 1263px) {
 
@@ -475,10 +586,11 @@
       padding-left: 10%;
     }
     .home-left-panel{
-      width: 100%;
+      width: 90%;
+
     }
     .home-right-panel{
-      width: 100%;
+      width: 90%;
       padding-top: 3%;
     }
 
@@ -508,11 +620,6 @@
     .price-card-2 .heading4{
       font-size: 400%;
     }
-
-
-
-
-
   }
   @media screen and (max-width: 575px) {
     #section-features-id i{
@@ -539,6 +646,10 @@
     }
     .features-flex{
       flex-wrap: wrap;
+      padding: 2%;
+    }
+    .home-left-panel button{
+      padding-top: 03%;
     }
   }
 
