@@ -3,7 +3,6 @@
     display: flex;
     flex-flow: row nowrap;
     padding: 2%;
-    background-color: rgb(198, 218, 114);
     align-items: center;
    justify-content: space-between;
   }
@@ -245,6 +244,17 @@
     width: 98%;
     padding-bottom: 12%;
     margin-bottom: 3%;
+    color: white;
+  }
+  #price-div h1{
+    justify-content: left;
+  }
+  #section-work-id button{
+    border-radius: 100px;
+    padding: 2%;
+    margin: 2%;
+    border: solid white;
+    border-width: 1px;
   }
   .price-card-1 h1{
     font-size: 200%;
@@ -252,7 +262,15 @@
   }
   .price-card-1 .heading4{
     font-size: 800%;
-
+  }
+  .price-card-1 button{
+    border-radius: 60px;
+    padding: 2%;
+    margin: 15%;
+  }
+  .price-card-1 h5{
+    color:rgb(224, 52, 52);
+    padding-top: 4%;
   }
   .price-card-2 h1{
     font-size: 200%;
@@ -263,6 +281,15 @@
     font-size: 800%;
     color: white;
   }
+  .price-card-2 button{
+    border-radius: 60px;
+    padding: 2%;
+    margin: 15%;
+  }
+  .price-card-2 h5{
+    color:rgb(224, 52, 52);
+    padding-top: 4%;
+  }
   #section-contact-id{
     height: auto;
     padding: 2%;
@@ -271,8 +298,7 @@
     text-align:center;
     align-items: center;
     margin: 0%;
-    /* background-image: url( "/home/dev/Desktop/HTMLFILES/images/image3.jpg" ); */
-    background-color: rgba(204, 14, 14, 0.836);
+    background-image: url(images/image3.jpg) ;    background-color: rgba(204, 14, 14, 0.836);
     background-blend-mode: darken;
     background-size: cover;
     color: white;
@@ -288,36 +314,101 @@
   #input-email11::placeholder {
     color: white;
   }
-  #select-options{
-    padding: 4%;
+  #input-message{
+    padding-top: 2%;
+    padding-bottom: 20%;
+    margin-bottom: 4%;
     background: transparent;
     border: solid white;
+  }
+
+  #input-message::placeholder {
     color: white;
+  }
+  .select-options{
+    padding: 3%;
+    background: transparent;
+    border: solid white;
     margin-bottom: 4%;
   }
-  #section-footer{
+  .select-options select{
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+  }
+  #section-contact-id .btn{
+    color: red;
+    border-radius: 6px;
+    padding: 01%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  #section-contact-id h5{
+    padding-top: 10%;
+  }
+  #section-contact-id h4{
+    padding-bottom: 6%;
+  }
+
+  .section-footer{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     background-color: white;
+    justify-content:space-between;
+    padding: 3%;
+    padding-left: 0%;
   }
-  #footer-1{
+  .footer-1{
     display: flex;
-    padding: 0%;
-    padding-top: 3%;
-    justify-content:center;
-    font-size: 110%;
-  }
-  #footer-2{
-    display: flex;
-    padding-top: 2%;
-    padding-bottom:01%;
-    justify-content: center;
-    align-items: center;
-  }
-  #footer2 i{
-    padding: 33%;
+    flex-flow: row nowrap;
     font-size: 120%;
+    text-align: left;
   }
+  .footer-1 i{
+    padding-top: 1%;
+  }
+  .footer-1 a{
+    color: red;
+  }
+  .footer-2{
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 170%;
+  }
+  .footer-2 .footer-text{
+    color: rgb(145, 153, 145);
+    flex-shrink: 0;
+    text-align: left;
+  }
+
+  #twitter{
+    color: rgb(0, 172, 238);
+    padding: 3%;
+    padding-right: 0%;
+
+  }
+  #pinterest{
+    color: rgb(230, 0, 35);
+    padding: 3%;
+    padding-right: 0%;
+  }
+  #facebook{
+    color: rgb(59, 89, 152);
+    padding: 3%;
+    padding-right: 0%;
+  }
+  #instagram{
+    color: rgb(171, 62, 185);
+    padding: 3%;
+    padding-right: 0%;
+  }
+  #skype{
+    color: rgb(27, 90, 185);
+    padding: 3%;
+    padding-right: 0%;
+  }
+
   #border-between-stars{
     text-align: left;
   }
@@ -327,12 +418,34 @@
   }
 
   .features-flex{
-    /* background-color: aqua; */
     display: flex;
     flex-flow: row nowrap;
-    /* text-align: left; */
-    /* align-items: center; */
-    /* justify-content: center; */
+
+  }
+  .features-flex h4{
+    padding-top: 2%;
+  }
+
+  .features-flex h5{
+    padding-top: 2%;
+  }
+  .features-flex #icon-1{
+    color:rgb(151, 216, 89);  }
+  .features-flex #icon-2{
+    color:rgb(105, 157, 226);  }
+  .features-flex #icon-3{
+    color:rgb(240, 142, 86);
+    }
+  .features-flex #icon-4{
+    color:rgb(74, 121, 182);
+  }
+  .features-flex #icon-5{
+    color:rgb(241, 103, 38);
+    }
+  .features-flex #icon-6{
+    color:rgb(34, 126, 247);  }
+  .grey-text{
+    color: rgb(108, 116, 108);
   }
 
   @media screen and (max-width: 768px) {
@@ -409,7 +522,6 @@
     }
     .price-card-1 h1{
       font-size: 200%;
-      /* color: white; */
       padding-top: 8%;
     }
     .price-card-1 .heading4{
