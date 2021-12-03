@@ -652,4 +652,10 @@
       padding-top: 03%;
     }
   }
+  @media screen and (max-width: 425px) {
+   #section-home-id i{
+    font-size: 300%;
+  }
+
+  }
 
