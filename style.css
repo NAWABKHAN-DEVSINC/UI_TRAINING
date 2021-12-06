@@ -375,9 +375,9 @@
     color: white;
   }
   #input-email11{
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-bottom: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 2%;
     background: transparent;
     border: solid white;
   }
@@ -396,17 +396,14 @@
   #input-message::placeholder {
     color: white;
   }
-  .select-options{
-    padding: 3%;
+
+  .select-options {
+    width: 102%;
     background: transparent;
     border: solid white;
-    margin-bottom: 4%;
-  }
-  .select-options select{
-    width: 100%;
-    background: transparent;
-    border: none;
+    border-radius: 5px;
     color: white;
+    margin: 2%;
   }
   #section-contact-id .btn{
     color: red;
@@ -421,10 +418,20 @@
   #section-contact-id h4{
     padding-bottom: 6%;
   }
-#section-contact-inputs{
-  padding: 0%;
-  margin: 0%;
-}
+
+  .contact-row-1{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .contact-row-2{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .contact-row-3{
+    padding: 2%;
+  }
+
+
   .section-footer{
     display: flex;
     flex-flow: row wrap;
@@ -620,6 +627,20 @@
     .price-card-2 .heading4{
       font-size: 400%;
     }
+    .contact-row-1{
+      flex-wrap: wrap;
+    }
+    .contact-row-2{
+      flex-wrap: wrap;
+    }
+    .select-options{
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    #input-email11{
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
   }
   @media screen and (max-width: 575px) {
     #section-features-id i{
@@ -651,6 +672,7 @@
     .home-left-panel button{
       padding-top: 03%;
     }
+
   }
   @media screen and (max-width: 425px) {
    #section-home-id i{
